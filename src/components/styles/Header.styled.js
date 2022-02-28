@@ -8,18 +8,28 @@ export const StyledHeader = styled.header`
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 10px;
-  flex-direction: column;
+  flex-direction: row;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
   }
 `;
 
+export const Image = styled.img`
+  width: 450px;
+  height: 200px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 768px;
+    margin-bottom: 30px;
+  }
+`;
+
 export const Logo = styled.img`
-  width: 950px;
-  height: 300px;
+  width: 450px;
+  height: 200px;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 768px;

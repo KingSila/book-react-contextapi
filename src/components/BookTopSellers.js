@@ -1,3 +1,4 @@
+import { BookTopSellersStyled } from "./styles/BookTopSellers.styled";
 import React, { useEffect, useState } from "react";
 var axios = require("axios").default;
 
@@ -34,7 +35,7 @@ export const BookTopSellers = () => {
   }, []);
 
   return (
-    <div>
+    <BookTopSellersStyled>
       {topbooks.map((book) => (
         <ul>
           <h3>
@@ -47,6 +48,6 @@ export const BookTopSellers = () => {
           ))}
         </ul>
       ))}
-    </div>
+    </BookTopSellersStyled>
   );
 };
